@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  pukaws:
+    image: pukaws
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/go/src/pukaws
+    ports:
+        - 80:80

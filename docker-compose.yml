@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  pukaws:
+    image: pukaws
+    build: .
+    ports:
+      - 80:80
+  mongo:
+    image: mongo
